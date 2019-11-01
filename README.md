@@ -1,12 +1,17 @@
-###### Simple GUI to display Air Sensor Data
+### Simple GUI to display Air Sensor Data
 
-######Requirements:
+#### Requirements:
 * Tkinter ```sudo apt-get install python3-tk```
 * PIL ```sudo pip install pillow```
 
-######Other
+#### Other
 * Turn off screen saver ```sudo apt-get install xscreensaver```
+        * ```
+        $ sudo xset s off
+        $ sudo xset -dpms
+        $ sudo xset s noblank
+        ```
         * ```xset q``` and turn off _dpms_ ```xset dpms```
 
-######Troubleshooting
+#### Troubleshooting
 * If You're using 3.5 Display like me it's could be necessary to run ```export DISPLAY=:0```

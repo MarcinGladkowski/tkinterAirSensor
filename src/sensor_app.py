@@ -39,16 +39,16 @@ class App:
         print (result)
 
         self.tempLabel.update()
-        self.tempLabel.config(text="Temperatura: " + str(result["temp"]))
+        self.tempLabel.config(text="Temperatura: " + str(result["temp"]) + ' st.C')
 
         self.humiLabel.update()
-        self.humiLabel.config(text="Wilgotność: " + str(result["humi"]))
+        self.humiLabel.config(text="Wilgotność: " + str(result["humi"]) + ' %')
 
         self.pm2.update()
-        self.pm2.config(text="PM2: " + str(result["p2"]))
+        self.pm2.config(text="PM2.5: " + str(result["p2"]) + ' µg/m³')
 
         self.pm10.update()
-        self.pm10.config(text="PM10: " + str(result["p1"]))
+        self.pm10.config(text="PM10: " + str(result["p1"]) + ' µg/m³')
 
         root.after(2000, self.update_measure)
 

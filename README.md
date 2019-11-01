@@ -6,7 +6,8 @@
 
 #### Other
 * Turn off screen saver ```sudo apt-get install xscreensaver```
-* ```bash
+
+```bash
 $ sudo xset s off
 $ sudo xset -dpms
 $ sudo xset s noblank

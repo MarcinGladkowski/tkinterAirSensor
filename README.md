@@ -5,7 +5,7 @@
 * PIL ```sudo pip install pillow```
 
 #### Other
-* Turn off screen saver ```sudo apt-get install xscreensaver```
+* Turn off screen saver ```sudo apt-get install xscreensaver``` [Turn off screensaver](https://www.geeks3d.com/hacklab/20160108/how-to-disable-the-blank-screen-on-raspberry-pi-raspbian/)
 
 ```bash
 $ sudo xset s off

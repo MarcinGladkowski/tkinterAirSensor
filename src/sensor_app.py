@@ -10,10 +10,11 @@ class App:
         self.root.title("Air quality measure")
 
         self.backgroundImage = ImageTk.PhotoImage(Image.open("../images/app_background.jpg"))
+        self.backgroundImageYellow = ImageTk.PhotoImage(Image.open("../images/app_background_yellow.jpg"))
 
         self.canvas = Canvas(root)
         self.canvas.pack(side='top', fill='both', expand='yes')
-        self.canvas.create_image(0, 0, image=self.backgroundImage, anchor='nw')
+        self.mainBackground =self.canvas.create_image(0, 0, image=self.backgroundImage, anchor='nw')
 
         self.tempText = None
         self.humiText = None
@@ -32,6 +33,7 @@ class App:
         self.canvas.itemconfigure(self.humiText, text=str("Wilgotność: " + str(result["humi"])) + ' %')
         self.canvas.itemconfigure(self.pm2Text, text=str("PM2.5: " + str(result["p2"])) + ' µg/m³')
         self.canvas.itemconfigure(self.pm1Text, text=str("PM10: " + str(result["p1"])) + ' µg/m³')
+
 
         print (result)
 

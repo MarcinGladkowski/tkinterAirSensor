@@ -53,6 +53,6 @@ class App:
 
 apiClient = ApiSensorClient
 root = Tk()
-root.attributes("-fullscreen", False)
+root.attributes("-fullscreen", True)
 App(root, apiClient)
 root.mainloop()

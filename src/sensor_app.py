@@ -1,6 +1,7 @@
 from sensor_api import ApiSensorClient
 from tkinter import *
 from PIL import ImageTk, Image
+import datetime
 
 class App:
     def __init__(self, root, api_client):
@@ -34,8 +35,8 @@ class App:
         self.canvas.itemconfigure(self.pm2Text, text=str("PM2.5: " + str(result["p2"])) + ' µg/m³')
         self.canvas.itemconfigure(self.pm1Text, text=str("PM10: " + str(result["p1"])) + ' µg/m³')
 
-
-        print (result)
+        now = datetime.datetime.now()
+        print(now)
 
         root.after(2000, self.update_measure)
 
